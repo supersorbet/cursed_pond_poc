@@ -1,0 +1,366 @@
+[
+    {
+        "type": "constructor",
+        "inputs": [
+            {
+                "name": "_nonfungiblePositionManager",
+                "type": "address",
+                "internalType": "contract INonfungiblePositionManager"
+            },
+            {
+                "name": "_nano",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "_hopped",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "_weth",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "_distillary",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "PID",
+        "type": "function",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "name": "bootUp",
+        "type": "function",
+        "inputs": [
+            {
+                "name": "amountOutMinUniswap",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "lpTokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "liquidity",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "amount0",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "amount1",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "payable"
+    },
+    {
+        "name": "bribeForLevelReward",
+        "type": "function",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "liquidity",
+                "type": "uint128",
+                "internalType": "uint128"
+            },
+            {
+                "name": "amount0",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "amount1",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "payable"
+    },
+    {
+        "name": "claim",
+        "type": "function",
+        "inputs": [
+            {
+                "name": "_address",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "deltaNeutralLPContinuum",
+        "type": "function",
+        "inputs": [
+            {
+                "name": "_factory",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "_liquidity",
+                "type": "uint128",
+                "internalType": "uint128"
+            },
+            {
+                "name": "amountOutMinUniswap",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "_virtualWeight",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "_delta",
+                "type": "int24",
+                "internalType": "int24"
+            },
+            {
+                "name": "_fee",
+                "type": "uint24",
+                "internalType": "uint24"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "liquidity",
+                "type": "uint128",
+                "internalType": "uint128"
+            }
+        ],
+        "stateMutability": "payable"
+    },
+    {
+        "name": "finalizeBlock",
+        "type": "function",
+        "inputs": [
+            {
+                "name": "liquidity",
+                "type": "uint128",
+                "internalType": "uint128"
+            },
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "locked",
+        "type": "function",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "payable"
+    },
+    {
+        "name": "mineLiquidity",
+        "type": "function",
+        "inputs": [
+            {
+                "name": "amountOutMinUniswap",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint128",
+                "internalType": "uint128"
+            },
+            {
+                "name": "newAllot",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "quote",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "payable"
+    },
+    {
+        "name": "rig",
+        "type": "function",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "blockno",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "mined",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "totalMinedPositions",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "difficulty",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "virtualWeight",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "vPool",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "name": "score",
+        "type": "function",
+        "inputs": [
+            {
+                "name": "_address",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "name": "scores",
+        "type": "function",
+        "inputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "base",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "balance",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "frequency",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "held",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "debt",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "redeemable",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view"
+    },
+    {
+        "name": "unifee",
+        "type": "function",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "amount0",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "amount1",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "payable"
+    },
+    {
+        "type": "receive",
+        "stateMutability": "payable"
+    }
+]
